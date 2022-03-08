@@ -16,16 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degra" translatesAutoresizingMaskIntoConstraints="NO" id="zwB-o5-lMT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degra2" translatesAutoresizingMaskIntoConstraints="NO" id="zwB-o5-lMT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="FAC-8S-dLi">
                                 <rect key="frame" x="15" y="44" width="384" height="778"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Berlin es la capital de alemania?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oo-3D-Scw">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="456"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.97030845210000005" green="0.97030845210000005" blue="0.97030845210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk8-Ua-Aed">
@@ -36,7 +37,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="tintColor" red="0.97030845210000005" green="0.97030845210000005" blue="0.97030845210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Verdadero"/>
+                                        <state key="normal" title="VERDADERO"/>
                                         <connections>
                                             <action selector="respuestaBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zU-YR-tNv"/>
                                         </connections>
@@ -49,12 +50,12 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="tintColor" red="0.97030845210000005" green="0.97030845210000005" blue="0.97030845210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Falso"/>
+                                        <state key="normal" title="FALSO"/>
                                         <connections>
                                             <action selector="respuestaBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q87-dJ-foi"/>
                                         </connections>
                                     </button>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w2q-ic-CTn">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="w2q-ic-CTn">
                                         <rect key="frame" x="0.0" y="763" width="384" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="8Tn-Bt-hga"/>
@@ -66,12 +67,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zwB-o5-lMT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Ec-Vw-Lao"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zwB-o5-lMT" secondAttribute="bottom" id="5yb-bb-uM9"/>
+                            <constraint firstItem="zwB-o5-lMT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1Ec-Vw-Lao"/>
+                            <constraint firstAttribute="bottom" secondItem="zwB-o5-lMT" secondAttribute="bottom" id="5yb-bb-uM9"/>
                             <constraint firstItem="FAC-8S-dLi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="DHa-va-X3z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FAC-8S-dLi" secondAttribute="bottom" constant="40" id="L1M-Ye-yNQ"/>
-                            <constraint firstItem="zwB-o5-lMT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aTj-5G-6h7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zwB-o5-lMT" secondAttribute="trailing" id="bDB-xS-Sdc"/>
+                            <constraint firstAttribute="bottom" secondItem="FAC-8S-dLi" secondAttribute="bottom" constant="74" id="L1M-Ye-yNQ"/>
+                            <constraint firstItem="zwB-o5-lMT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aTj-5G-6h7"/>
+                            <constraint firstAttribute="trailing" secondItem="zwB-o5-lMT" secondAttribute="trailing" id="bDB-xS-Sdc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FAC-8S-dLi" secondAttribute="trailing" constant="15" id="emV-8c-jUi"/>
                             <constraint firstItem="FAC-8S-dLi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hiI-8O-rG3"/>
                         </constraints>
@@ -89,7 +90,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="degra" width="1632" height="918"/>
+        <image name="degra2" width="800" height="1422"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
