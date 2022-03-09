@@ -22,8 +22,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="FAC-8S-dLi">
                                 <rect key="frame" x="15" y="44" width="384" height="778"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntuaje: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPl-VS-A2W">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.97030845210000005" green="0.97030845210000005" blue="0.97030845210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Berlin es la capital de alemania?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oo-3D-Scw">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="456"/>
+                                        <rect key="frame" x="0.0" y="123" width="384" height="333"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" red="0.97030845210000005" green="0.97030845210000005" blue="0.97030845210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,6 +44,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="tintColor" red="0.97030845210000005" green="0.97030845210000005" blue="0.97030845210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="VERDADERO"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="respuestaBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zU-YR-tNv"/>
                                         </connections>
@@ -51,6 +62,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="tintColor" red="0.97030845210000005" green="0.97030845210000005" blue="0.97030845210000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="FALSO"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="respuestaBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q87-dJ-foi"/>
                                         </connections>
@@ -78,6 +94,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Puntos" destination="cPl-VS-A2W" id="h8O-fD-Bj0"/>
                         <outlet property="barraProgreso" destination="w2q-ic-CTn" id="dS7-gM-UzF"/>
                         <outlet property="falsoBoton" destination="0xV-oW-7ar" id="B3B-wU-Zz8"/>
                         <outlet property="preguntaLbl" destination="4oo-3D-Scw" id="3Gf-uq-Lfu"/>
